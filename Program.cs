@@ -86,9 +86,9 @@ class Program
         item1.PrintDetails();
         // 4. Check if an item is in stock and print a message accordingly.
         Console.WriteLine("\nStock status:");
-        Console.WriteLine(item1.ItemName + " is " + (item1.IsInStock() ? "in stock." : "out of stock."));
-        Console.WriteLine(item2.ItemName + " is " + (item2.IsInStock() ? "in stock." : "out of stock."));
-
+        Console.WriteLine($"Item 1 is in stock: {item1.IsInStock()}");
+        Console.WriteLine($"Item 2 is in stock: {item2.IsInStock()}");
+         
 
     }
 }
